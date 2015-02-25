@@ -10,3 +10,9 @@ require "rake/extensiontask"
 Rake::ExtensionTask.new("gethostbyname") do |ext|
   ext.lib_dir = "lib/gethostbyname"
 end
+
+RSpec::Core::RakeTask.new :spec do |task|
+  task.rspec_opts = '--format documentation'
+end
+
+task :default => [:spec]

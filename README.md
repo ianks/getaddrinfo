@@ -1,4 +1,6 @@
 # Gethostbyname
+[![Build
+Status](https://travis-ci.org/ianks/gethostbyname-ruby.svg)](https://travis-ci.org/ianks/gethostbyname-ruby)
 
 Get a list of host IP addresses from a name: `Gethostname.gethostname
 'google.com'`

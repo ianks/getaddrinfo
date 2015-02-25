@@ -1,10 +1,10 @@
 require 'benchmark/ips'
-require 'gethostname'
+require 'gethostbyname'
 require 'socket'
 
 Benchmark.ips do |x|
-  x.report 'gethostname' do
-    Gethostname.gethostname 'apple.com'
+  x.report 'gethostbyname' do
+    Gethostbyname.gethostbyname 'apple.com'
   end
 
   x.report 'gethostbyname' do

@@ -4,20 +4,20 @@
 #include <arpa/inet.h>
 #include <netdb.h>
 
-#include "gethostname.h"
+#include "gethostbyname.h"
 
-VALUE rb_mGethostname;
+VALUE rb_mGethostbyname;
 
-VALUE method_gethostname(VALUE self, VALUE hostname);
+VALUE method_gethostbyname(VALUE self, VALUE hostname);
 
 void
-Init_gethostname(void)
+Init_gethostbyname(void)
 {
-  rb_mGethostname = rb_define_module("Gethostname");
-  rb_define_singleton_method(rb_mGethostname, "gethostname", method_gethostname, 1);
+  rb_mGethostbyname = rb_define_module("Gethostbyname");
+  rb_define_singleton_method(rb_mGethostbyname, "gethostbyname", method_gethostbyname, 1);
 }
 
-VALUE method_gethostname(VALUE self, VALUE hostname) {
+VALUE method_gethostbyname(VALUE self, VALUE hostname) {
   VALUE result = rb_ary_new();
 
   struct hostent *he;

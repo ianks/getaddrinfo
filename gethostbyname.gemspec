@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'gethostname/version'
+require 'gethostbyname/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gethostname"
-  spec.version       = Gethostname::VERSION
+  spec.name          = "gethostbyname"
+  spec.version       = Gethostbyname::VERSION
   spec.authors       = ["Ian Ker-Seymer"]
   spec.email         = ["i.kerseymer@gmail.com"]
-  spec.extensions    = ["ext/gethostname/extconf.rb"]
-  spec.summary       = 'gethostname for Ruby.'
+  spec.extensions    = ["ext/gethostbyname/extconf.rb"]
+  spec.summary       = 'gethostbyname for Ruby.'
   spec.homepage      = ""
   spec.license       = "MIT"
 

@@ -7,6 +7,6 @@ task :default => :spec
 
 require "rake/extensiontask"
 
-Rake::ExtensionTask.new("gethostname") do |ext|
-  ext.lib_dir = "lib/gethostname"
+Rake::ExtensionTask.new("gethostbyname") do |ext|
+  ext.lib_dir = "lib/gethostbyname"
 end
